@@ -132,14 +132,5 @@ def show_main_app():
 ## نقطة تشغيل التطبيق
 
 def main():
-   if "logged_in" not in st.session_state:
-       st.session_state["logged_in"] = False
-
-   if not st.session_state["logged_in"]:
-       show_login_page()
-   else:
-       show_main_app()
-
-
-if __name__ == "_main_":
-   main()
+  if True:
+    main()
