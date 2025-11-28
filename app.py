@@ -129,16 +129,17 @@ def show_main_app():
             st.success("تم فك التشفير بنجاح")
 
 
-# ------------------ نقطة تشغيل التطبيق ------------------
+## نقطة تشغيل التطبيق
 
 def main():
-    if "logged_in" not in st.session_state:
-        st.session_state["logged_in"] = False
-      if not st.session_state["logged_in"]:
-        show_login_page()
-    else:
-        show_main_app()
+   if "logged_in" not in st.session_state:
+       st.session_state["logged_in"] = False
+
+   if not st.session_state["logged_in"]:
+       show_login_page()
+   else:
+       show_main_app()
 
 
-if name == "__main__":
-    main()
+if _name_ == "_main_":
+   main()
